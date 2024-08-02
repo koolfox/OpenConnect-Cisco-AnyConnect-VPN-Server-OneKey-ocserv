@@ -37,7 +37,7 @@ RUN set -ex \
     && cd /etc/ocserv/certs \
     && touch /etc/ocserv/ocpasswd \
     && apk del .build-dependencies \
-    && apk add --no-cache gnutls linux-pam krb5-libs libtasn1 oath-toolkit-liboath nettle libev protobuf-c musl lz4-libs libseccomp readline libnl3 iptables \
+    && apk add --no-cache gnutls linux-pam krb5-libs libtasn1 oath-toolkit-liboath nettle libev protobuf-c musl lz4-libs libseccomp readline libnl3 iptables curl \
     && rm -rf /var/cache/apk/*
 WORKDIR /etc/ocserv
 COPY ocserv.conf /etc/ocserv.conf
