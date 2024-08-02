@@ -8,7 +8,7 @@ Buggy script for configuring OpenConnect (ocserv) protocol on the server easily 
 1. Install Docker
 2. Build docker image
 ```bash
-docker build -t ocserv https://github.com/iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv.git
+docker build -t ocserv https://github.com/mogilevich/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv.git
 ```
 
 3. Run docker container
@@ -47,11 +47,11 @@ docker exec -ti ocserv cat /etc/ocserv/ocpasswd
 ```
 
 ## Script Installation
-Tested on ubuntu 18.04 and 16.04.
+Tested on ubuntu 22.04.4, 18.04 and 16.04.
 
 Download and saving script on your server:
 ```bash
-curl -O https://raw.githubusercontent.com/iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv/master/ocserv-install.sh
+curl -O https://raw.githubusercontent.com/mogilevich/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv/master/ocserv-install.sh
 ```
 
 Making script executable
@@ -90,7 +90,7 @@ And one more thing, contributions are welcome.
 ## How to customize the configuration?
 In docker way, at the beginning you have to clone the repo:
 ```sh
-git clone https://github.com/iw4p/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv.git
+git clone https://github.com/mogilevich/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv.git
 ```
 
 cd to the directory
