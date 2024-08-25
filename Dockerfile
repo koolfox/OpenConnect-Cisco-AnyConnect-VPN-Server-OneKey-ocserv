@@ -1,4 +1,4 @@
-FROM alpine:3.13
+FROM alpine:latest
 
 ENV OCSERV_VERSION=1.3.0
 RUN set -ex \

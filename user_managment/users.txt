@@ -1,1 +1,2 @@
-testuser    test1234
+testuser1    test1234
+testuser2    test1234

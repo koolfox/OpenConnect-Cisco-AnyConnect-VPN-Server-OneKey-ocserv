@@ -10,7 +10,10 @@ sudo systemctl list-timers | grep certbot
 ```
 2. Build docker image
 ```bash
-docker build -t ocserv https://github.com/mogilevich/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv.git
+git clone  https://github.com/mogilevich/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv.git
+cd OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv/
+docker build . -t ocserv
+#docker build -t ocserv https://github.com/mogilevich/OpenConnect-Cisco-AnyConnect-VPN-Server-OneKey-ocserv.git
 ```
 
 3. Run docker container
@@ -51,6 +54,13 @@ docker exec -ti ocserv_container ocpasswd -c /etc/ocserv/ocpasswd -u testUserNam
 9. Show all users and their hashed password
 ```bash
 docker exec -ti ocserv_container cat /etc/ocserv/ocpasswd
+```
+
+9. Import list user
+```bash
+cd user_managment/
+nano users.txt
+./add_users.sh
 ```
 
 ## Features
